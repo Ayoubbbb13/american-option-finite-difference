@@ -62,9 +62,15 @@ at each time step.
 - Over-relaxation (\(\omega \in (1,2)\)) significantly reduces iterations  
 
 ### Semi-Smooth Newton
-- Reformulates the LCP as: $ F(x) = \min(Bx - b,\; x - g) $
+
+- Reformulates the LCP as:
+
+$$
+F(x) = \min(Bx - b,\; x - g)
+$$
+
 - Fast local convergence  
-- Efficient for fine grids  
+- Efficient for fine grids
 
 ---
 
