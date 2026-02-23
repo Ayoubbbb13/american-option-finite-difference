@@ -8,23 +8,23 @@ The American pricing problem leads to a parabolic variational inequality (obstac
 
 ## Mathematical Problem
 
-The price \( u(t,x) \) of an American option satisfies:
+The price $u(t,x)$ of an American option satisfies:
 
-\[
-\min(\partial_t u + Au + q(t), u - g) = 0
-\]
+$$
+\min(\partial_t u + Au + q(t),\; u - g) = 0
+$$
 
 where:
 
-- \( A \) is the Black–Scholes spatial operator  
-- \( g \) is the payoff function  
+- $A$ is the Black–Scholes spatial operator  
+- $g$ is the payoff function  
 - the obstacle condition enforces early exercise  
 
 After spatial discretization, the problem becomes:
 
-\[
+$$
 \min(Bx - b,\; x - g) = 0
-\]
+$$
 
 at each time step.
 
@@ -63,9 +63,9 @@ at each time step.
 
 ### Semi-Smooth Newton
 - Reformulates the LCP as:
-  \[
-  F(x) = \min(Bx - b,\; x - g)
-  \]
+  $$
+F(x) = \min(Bx - b,\; x - g)
+$$
 - Fast local convergence  
 - Efficient for fine grids  
 
@@ -76,11 +76,11 @@ at each time step.
 The study includes:
 
 - Convergence order estimation  
-- Stabilization towards reference value \( \bar{v} \)  
+- Stabilization towards reference value $\bar{v}$  
 - Influence of spatial refinement  
 - CPU time comparison  
-- Behavior with smooth payoff \( \varphi_1 \)  
-- Behavior with discontinuous payoff \( \varphi_2 \)  
+- Convergence analysis for smooth payoff $\varphi_1$  
+- Impact of payoff discontinuity ($\varphi_2$) on convergence   
 
 Main observations:
 
